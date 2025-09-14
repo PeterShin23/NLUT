@@ -69,7 +69,7 @@ class NLUTNet(nn.Module):
     def __init__(self, nsw, dim, *args, **kwargs):
         super(NLUTNet, self).__init__()
         vgg = net.vgg
-        vgg.load_state_dict(torch.load('models/vgg_normalised.pth'))
+        vgg.load_state_dict(torch.load('models/vgg_normalised.pth', weights_only=False))
         self.encoder = net.Net(vgg)
         self.encoder.eval()
         self.adain = AdaIN()
