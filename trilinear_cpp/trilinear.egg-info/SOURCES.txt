@@ -1,4 +1,5 @@
 setup.py
+src/trilinear.cpp
 src/trilinear_cuda.cpp
 src/trilinear_kernel.cu
 trilinear.egg-info/PKG-INFO

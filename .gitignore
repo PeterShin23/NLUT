@@ -1,0 +1,21 @@
+# Compiled shared objects
+*.so
+*.pyd
+*.dll
+
+# Object files
+*.o
+*.obj
+
+# Python packaging metadata
+*.egg-info/
+*.egg-info
+__pycache__
+*.egg
+dist/
+build/
+
+# Model checkpoints
+*.pth
+*.pt
+checkpoints/
